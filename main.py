@@ -147,6 +147,8 @@ def clear_objects():
 
 def draw():
     global GAME_OVER
+    print (type(screen))
+    screen.clear()
     GAME_OVER = False
     ship_component.draw()
     screen.draw.text("GAME OVER",(WIDTH/2,HEIGHT/2),fontsize=40,color="red")
